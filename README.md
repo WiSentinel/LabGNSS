@@ -1,7 +1,7 @@
 # LabGNSS
 GNSS lab code | WiSentinel @ PoliTo
 
-## Code Modifications: Gradual Spoofing Implementation
+## Code Modifications: Stealthy GNSS Spoofing
 
 This repository modifies the standard static GNSS spoofing approach into a dynamic, gradual drift to make the attack less detectable. The updates are implemented across three files.
 
