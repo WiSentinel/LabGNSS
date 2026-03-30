@@ -3,7 +3,7 @@ GNSS lab code | WiSentinel @ PoliTo
 
 ## Code Modifications: Gradual Spoofing Implementation
 
-This repository modifies the standard static GNSS spoofing approach into a dynamic, gradual drift to bypass kinematic anomaly detection (e.g., RAIM). The updates are implemented across three files.
+This repository modifies the standard static GNSS spoofing approach into a dynamic, gradual drift to make the attack less detectable. The updates are implemented across three files.
 
 ### 1. `GNSS lab code/opensource/ProcessGnssMeasScript.m` (Main Script)
 * **Added Configuration Parameters:** Introduced `spoof.mode` (`'instant'` or `'gradual'`) and `spoof.t_duration` (drift time in epochs/seconds) to the initial settings.
