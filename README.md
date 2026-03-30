@@ -3,7 +3,7 @@ GNSS lab code | WiSentinel @ PoliTo
 
 ## Code Modifications: Stealthy GNSS Spoofing
 
-This repository modifies the standard static GNSS spoofing approach into a dynamic, gradual drift to make the attack less detectable. The updates are implemented across three files.
+This repository modifies the standard static GNSS spoofing approach into a dynamic, gradual drift to make the attack less detectable. This is achieved by using linear interpolation to generate a time-varying trajectory, spreading the position shift over a user-defined duration to mimic realistic movement and prevent abnormal spikes. The updates are implemented across three files:
 
 ### 1. `GNSS lab code/opensource/ProcessGnssMeasScript.m` (Main Script)
 * **Added Configuration Parameters:** Introduced `spoof.mode` (`'instant'` or `'gradual'`) and `spoof.t_duration` (drift time in epochs/seconds) to the initial settings.
